@@ -1,0 +1,66 @@
+Proyecto	{
+		nombre del proyecto,
+		cliente,
+		project manager,
+		product owner,
+		link de git,
+		equipo de desarrollo,
+		Accessos al FTP	{
+				url,
+				usuario,
+				password,
+				puerto
+		}
+		framework,
+		Contactos del cliente	{
+					nombre,
+					email,
+					rol
+		}
+		Horas registradas,
+		horas contratadas,
+		horas facturables
+},
+FrameWork	{
+		nombre,
+		version,
+		interna o externa,
+		Colección de licencias	{
+					usuario,
+					contraseña,
+					codigo,
+					libre o paga,
+					usuario quien la tiene
+		}
+		url git,
+		estado,
+		notas
+},
+Usuarios de compañía	{
+			nombre,
+			usuario,
+			rol,
+			proyectos
+},
+Registro de horas	{
+			usuario,
+			proyecto,
+			fecha,
+			cantidad de horas,
+			cantidad de horas facturables
+},
+
+
+
+
+
+
+****
+****
+****
+***
+**
+*
+Construir Base de Datos, colecciones, API, documentos
+3 sentencias de CRUD
+Entregar un Word

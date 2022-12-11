@@ -1,0 +1,317 @@
+{
+	"info": {
+		"_postman_id": "c6c7ec31-6118-4770-9046-948f4038ebd2",
+		"name": "terceraSimulación",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23947323"
+	},
+	"item": [
+		{
+			"name": "Gets",
+			"item": [
+				{
+					"name": "Proyectos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/projects",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Frameworks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/frameworks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"frameworks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RegistroHoras",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/registrosh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registrosh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Puts",
+			"item": [
+				{
+					"name": "editarProyecto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"projectname\": \"proyectoPrueba\",\r\n        \"client\": \"clientePrueba\",\r\n        \"projectManager\": \"pmPrueba\",\r\n        \"projectOwner\": \"poPrueba\",\r\n        \"linkGit\": \"https://www.pruebas.com/repoPrueba\",\r\n        \"crewDev\": \"solo\",\r\n        \"url\": \"https://www.sitio.com\",\r\n        \"usuario\": \"userPrueba\",\r\n        \"password\": \"psswdPrueba\",\r\n        \"puerto\": \"3000\",\r\n        \"framework\": \"React\",\r\n        \"name\": \"userNamePrueba\",\r\n        \"email\": \"prueba@Gmail.com\",\r\n        \"rol\": \"dev\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/projects/63921de86ac26a1a702c90b0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"projects",
+								"63921de86ac26a1a702c90b0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editarFramework",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"React2\",\r\n    \"version\": \"2.8\",\r\n    \"inOrOut\": \"externa\", \r\n    \"user\": \"userPruebaFramework2\",\r\n    \"password\": \"psswdPruebaFramework2\",\r\n    \"cod\": \"kksnndii666\",\r\n    \"payOrFree\": \"free\",\r\n    \"finalUser\": \"userPruebaFramework2\",\r\n    \"urlGit\": \"https://www.pruebas.com/repoPrueba2\",\r\n    \"note\": \"none\",\r\n    \"condition\": \"desarrollo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/frameworks/639221856ac26a1a702c90b8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"frameworks",
+								"639221856ac26a1a702c90b8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editarRegistroHoras",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"userPrueba2\",\r\n    \"project\": \"proyectoPrueba2\",\r\n    \"date\": \"8/12/2022\", \r\n    \"hours\": \"48\",\r\n    \"billableHours\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/registrosh/6395340f80772404a0fada54",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registrosh",
+								"6395340f80772404a0fada54"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "nuevoProyecto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"projectname\": \"proyectoPrueba2\",\r\n    \"client\": \"clientePrueba2\",\r\n    \"projectManager\": \"pmPrueba2\",\r\n    \"projectOwner\": \"poPrueba2\",\r\n    \"linkGit\": \"https://www.pruebas2.com/repoPrueba2\",\r\n    \"crewDev\": \"solo2\",\r\n    \"url\": \"https://www.sitio2.com\",\r\n    \"usuario\": \"userPrueba2\",\r\n    \"password\": \"psswdPrueba2\",\r\n    \"puerto\": \"3000\",\r\n    \"framework\": \"React\",\r\n    \"name\": \"userNamePrueba2\",\r\n    \"email\": \"prueba2@Gmail.com\",\r\n    \"rol\": \"dev2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/projects",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nuevoFramework",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"React2\",\r\n    \"version\": \"2.5\",\r\n    \"inOrOut\": \"externa\", \r\n    \"user\": \"userPruebaFramework2\",\r\n    \"password\": \"psswdPruebaFramework2\",\r\n    \"cod\": \"kksnndii666\",\r\n    \"payOrFree\": \"free\",\r\n    \"finalUser\": \"userPruebaFramework2\",\r\n    \"urlGit\": \"https://www.pruebas.com/repoPrueba2\",\r\n    \"note\": \"none\",\r\n    \"condition\": \"desarrollo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/frameworks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"frameworks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nuevoRegistroHoras",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"userPrueba3\",\r\n    \"project\": \"proyectoPrueba3\",\r\n    \"date\": \"8/12/2022\", \r\n    \"hours\": \"08\",\r\n    \"billableHours\": \"12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/registrosh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registrosh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Deletes",
+			"item": [
+				{
+					"name": "borrarProyecto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/projects/63921e5d6ac26a1a702c90b3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"projects",
+								"63921e5d6ac26a1a702c90b3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrarFramework",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/frameworks/639221856ac26a1a702c90b8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"frameworks",
+								"639221856ac26a1a702c90b8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrarRegistroHoras",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/registrosh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registrosh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
